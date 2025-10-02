@@ -4,7 +4,7 @@
 
 **Explanation:** Business logic, such as calculating the final price, is coupled to database schema and mysql functionality. If we change the schema or choose to use a different database, we would need to update code that contains business logic. Additionally, we'll need to that everywhere where our business logic relies on mysql.
 
-**Solution:** Encapsulate database access in a dedicated module, hiding behind  a well defined interface. All modules that need to communicate with the database must go through your dedicated module. No module cares about how exactly the data is stored or retrieved, they rely on your well-defined interface. This interface can be abstracted out, to make your application even more flexible.
+**Solution:** Encapsulate database access in a dedicated module, hiding behind  a well defined interface. All modules that need to communicate with the database must go through your interface. No module cares about how exactly the data is stored or retrieved, they rely on your well-defined interface. This interface can be abstracted out, to make your application even more flexible.
 
 First, let's define the interface for accessing a pricing repository.
 ```python
