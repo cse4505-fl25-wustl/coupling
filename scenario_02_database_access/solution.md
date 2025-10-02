@@ -10,7 +10,7 @@ First, let's define the interface for accessing a pricing repository.
 ```python
 # interfaces.py
 
-from typing import Protocol, List
+from typing import Protocol
 
 class PricingRepository(Protocol):
     """
@@ -31,7 +31,7 @@ We can have one or more concrete implementations of this interface.
 ```python
 # repositories.py
 import mysql.connector
-from interfaces import PricingRepository # Import the interface
+from interfaces import PricingRepository
 
 class SQLPricingRepository(PricingRepository):
     """A concrete implementation that gets data from a MySQL database."""
@@ -81,6 +81,7 @@ def calculate_final_price(
     return round(final_price, 2)
 ```
 
+To call `calculate_final_price` we need a concrete object that implements the PricingRepository protocol.
 ```python
 # main.py
 # Example usage scenario (using the real database)
