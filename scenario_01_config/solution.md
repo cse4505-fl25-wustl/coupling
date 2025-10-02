@@ -1,4 +1,4 @@
-Scenario 1: Configuration - Solution
+# Scenario 1: Configuration - Solution
 
 **Answer: High Coupling**
 
