@@ -41,4 +41,4 @@ def calculate_final_price(product_ids, user_location, db_connection):
 # db_connection.cursor().execute("UPDATE Users SET ...")
 ```
 
-**Question:** Is this high coupling?
+**Question:** Does this create high coupling?
