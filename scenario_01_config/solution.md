@@ -6,7 +6,7 @@ Scenario 1: Configuration - Solution
 
 **Solution:** Instead of using global configuration, create a separate configuration object and pass it to each service that needs to be configured separately.
 
-```
+```python
 # config.py
 
 class Config:
@@ -16,7 +16,7 @@ class Config:
         self.api_timeout = api_timeout
 ```
 
-```
+```python
 # user_service.py
 
 class UserService:
@@ -30,7 +30,7 @@ class UserService:
         return response
 ```
 
-```
+```python
 # order_service.py
 
 class OrderService:

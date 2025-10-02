@@ -2,7 +2,7 @@
 
 Suppose we have the following configuration variables and settings:
 
-```
+```python
 # config.py
 DEBUG_MODE = True
 MAX_RETRIES = 3
@@ -11,7 +11,7 @@ API_TIMEOUT = 30
 
 Multiple services use the configuration settings
 
-```
+```python
 # user_service.py
 
 import config
@@ -25,8 +25,9 @@ def fetch_user(user_id):
 ```
 
 One of the services, adjusts `MAX_RETRIES` configuration setting based on its needs.
-```
+```python
 # order_service.py
+
 import config
 
 def process_order(order_id):
