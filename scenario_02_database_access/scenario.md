@@ -9,7 +9,7 @@ We define a database connection in our main script and pass that connection to t
 # main.py
 import mysql.connector
 DB_CONNECTION = mysql.connector.connect(user='root', database='ecommerce')
-
+final_price = calculate_final_price([101, 205], "CA", DB_CONNECTION)
 ```
 
 We use the database connection passed to our business logic, accessing the database directly and using functions from mysql package.
