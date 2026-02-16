@@ -1,4 +1,4 @@
-# Scenario 4: Direct Property Assignment
+# Scenario 5: Direct Property Assignment
 
 **Answer: High Coupling**
 
