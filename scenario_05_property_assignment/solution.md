@@ -2,7 +2,7 @@
 
 **Answer: High Coupling**
 
-**Explanation:** If the requirements change—for example, the MatchResult class now requires a timestamp or a referee_id in its constructor—every single piece of code that assigns a result will break.
+**Explanation:** If the requirements change, for example the MatchResult class now requires a timestamp in its constructor, every single piece of code that assigns a result will break.
 
 **Solution:** To lower the coupling, move the assignment inside the Match class.
 
