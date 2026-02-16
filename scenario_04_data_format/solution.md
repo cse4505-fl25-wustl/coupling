@@ -5,6 +5,7 @@
 **Explanation:** If the vendor decides to add a "Description" column as the second item in the CSV, or if they switch from a CSV to a JSON API, the business logic itself breaks. Even though the "Low stock alert" rules haven't changed, the code fails because it is too intimately familiar with how the data was stored on disk.
 
 **Solution:** Separate input data parsing from business logic. 
+
 Introducing Data Transfer Objects (DTO) - light weight objects for simply passing data to and from application layer.
 
 ```python
