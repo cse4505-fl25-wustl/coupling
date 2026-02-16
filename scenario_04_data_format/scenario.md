@@ -1,4 +1,4 @@
-# Scenario 4: Data Format
+# Scenario 4: External Data Format
 
 Consider a bulk order processing system that allows vendors to upload their inventory updates via a CSV file.
 

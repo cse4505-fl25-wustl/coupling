@@ -1,4 +1,4 @@
-# Scenario 1: Configuration - Solution
+# Scenario 4: External Data Format
 
 **Answer: High Coupling**
 
